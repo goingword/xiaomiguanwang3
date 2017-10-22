@@ -1,0 +1,713 @@
+#head a{
+    background:url("../img/head.jpg") no-repeat center center ;
+    display:block;
+    height:120px;
+}
+
+
+
+
+
+
+
+.wrapper{
+width:1300px;
+    margin:0 auto;
+}
+/*top内容*/
+#top-search-container{
+    /*overflow:hidden;*/
+    height:40px;
+    background:black;
+}
+#top-search-container a:hover{
+    color:white;
+}
+#top-search-container {
+    /*overflow:hidden;*/
+    /*display:block;*/
+    /*margin:0 auto;*/
+}
+#top-search-left{
+    /*overflow:hidden;*/
+    /*display:block;*/
+    /*margin:0 auto;*/
+    /*margin-left:200px;*/
+}
+#top-search-right{
+    /*overflow:hidden;*/
+    /*margin-right:200px;*/
+}
+#top-search-left li{
+    margin-right:6px;
+    /*overflow:hidden;*/
+    float:left;
+}
+#top-search-right li{
+    float:right;
+    /*overflow:hidden;*/
+    /*margin-right:5px;*/
+}
+#shopping-icon-li {
+    position:relative;
+    display:block;
+    line-height:40;
+    /*overflow:hidden;*/
+    width:100px;
+    height:40px;
+}
+#shopping-icon-li a{
+    background: #424242;
+    width:100%;
+    height:100%;
+    display:block;
+}
+#li-box{
+    /*position:absolute;*/
+    /*top:40px;*/
+    /*right:0;*/
+    /*display:block;*/
+    /*width:100px;*/
+    /*height:100px;*/
+    /*!*background:red;*!*/
+    /*color:red;*/
+    /*z-index: 1;*/
+    /*text-align: center;*/
+    /*font-size:12px;*/
+    /*line-height: 100px;*/
+    width: 300px;
+    /*height: 100px;*/
+    height: 0;
+    font-size: 12px;
+    line-height: 100px;
+    text-align: center;
+    position: absolute;
+    right: 0px;
+    top:40px;
+    background:white;
+    z-index:3;
+    box-shadow: 0 0px 5px 1px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: none;
+}
+/*#shopping-icon-li a span{*/
+    /*float:right;*/
+/*}*/
+#shopping-icon{
+    display:block;
+    width:20px;
+    height:40px;
+    float:left;
+
+    font-size:20px;
+    margin-right: 4px;
+}
+/*#shopping-icon:hover{*/
+    /*color:red;*/
+/*}*/
+#shopping-icon-li a:hover{
+    color:red;
+    background:white;
+}
+#shopping-icon-li:hover #li-box{
+    display:block;
+    animation: show 0.3s ease-in forwards;
+}
+@keyframes show {
+    100%{
+        height: 100px;
+    }}
+#shopping-text{
+    position:absolute;
+    top:40px;
+    right:0;
+    display:block;
+    width:40px;
+    height:40px;
+    background:red;
+}
+#top-search-container a{
+    line-height:40px;
+    font-size:12px;
+    color:grey;
+    font-family:sans-serif;
+    padding-right:6px;
+    overflow:hidden;
+}
+#top-search-container span{
+    color:grey;
+    float:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*下面是middle内容*/
+#middle-container{
+    position:relative;
+    height:100px;
+}
+/*#middle-container2{*/
+    /*width:1226px;*/
+    /*!*position:relative;*!*/
+    /*display:block;*/
+    /*margin:0 auto;*/
+    /*overflow:hidden;*/
+/*}*/
+/*left-migo*/
+.mi-logo{
+    /*margin-left:100px;*/
+    overflow:hidden;
+    float:left;
+    height: 55px;
+
+    width:70px;
+    margin-top:20px;
+}
+.mi-logo a{
+    /*margin-top:20px;*/
+    /*float:none;*/
+    display:block;
+    background:url("../img/mi-logo.png") no-repeat center center ;
+    background-color: #ff6700;
+    /*设置背景图片颜色*/
+    height: 55px;
+    width:70px;
+}
+/*middle-search-menu*/
+#middle-search-menu{
+    float:left;
+    height:100%;
+    overflow:hidden;
+}
+
+#middle-search-menu li{
+    float:left;
+    overflow:hidden;
+}
+#span{
+    display:block;
+    width:142px;
+    height:100px;
+
+
+}
+#middle-search-menu a{
+    display:block;
+    /*line-height:100px;*/
+    font-size:16px;
+    font-family:sans-serif;
+    padding: 35px 10px 38px;
+    color:black;
+}
+#middle-search-menu a:hover{
+    color:orange;
+}
+/*2级菜单样式*/
+#middle-search-container{
+    overflow:hidden;
+    /*为了动画能显示要将子类元素设置溢出隐藏*/
+    position:absolute;
+    top:100px;
+    left:0;
+    width:100%;
+    height:0;
+    /*起始高度设为0，才能让他慢慢显示出来*/
+    display:none;
+    border-top:1px solid #e0e0e0;
+    z-index:5;
+    /*这个问题偶尔会出现*/
+    /*此处加上后会把下面的left往下挤，不加left上来，但是不在他的上面*/
+    background:white;
+}
+#middle-search-container  a{
+    padding:5px 5px;
+    /*background:white;*/
+
+}
+#middle-search-container .price{
+    color:#ff6700;
+}
+#middle-search-container .sub-menu{
+    background:white;
+    /*border-right:1px solid grey;*/
+}
+/*#xx{*/
+    /*!*margin-top:150px;*!*/
+    /*display:inline-block;*/
+    /*width:2px;*/
+    /*!*padding:140px auto;*!*/
+    /*line-height:300px;*/
+    /*font-size:30px;*/
+    /*color:black;*/
+/*}*/
+#middle-search-container .sub-menu{
+float:left;
+    display:inline-block;
+    width:180px;
+    text-align:center;
+    padding:35px 12px 0;
+}
+/*#分割线添加*/
+#middle-search-container .img{
+    border-right:1px solid #e0e0e0;
+    /*直接给img添加右边框；*/
+}
+#middle-search-container .clear-img-border{
+    border-right:1px solid white;
+    /*清除最右边的边框线*/
+}
+
+#middle-search-container .second-menu li{
+    float:none;
+}
+#middle-search-container .second-menu  .flag{
+    /*!*margin-left:30px;*!*/
+    /*!*display: inline-block;*!*/
+    /*height: 18px;*/
+    /*!*text-align:center ;*!*/
+    /*padding: 1px 20px;*/
+    /*border: 1px solid #ff6700;*/
+    /*color: #ff6700;*/
+}
+.flag{
+    /*display:inline-block;*/
+    /*text-align:center;*/
+    /*margin:0 auto;*/
+    color:#ff6700;
+}
+
+ #middle-search-container .flag .xinpin-add-border{
+     /*此处出现优先级问题*/
+     /*如果直接用div签选择器无法成功加上边框（继承了父辈的div属性，只有通过*/
+     /*将div加上类名，通过类选择器才可加上*/
+    display: inline-block;
+    height: 18px;
+    width:40px;
+    padding: 1px 8px;
+    border: 1px solid #ff6700;
+    color: #ff6700;
+}
+.img img{
+    width:100%;
+   height:100%;
+}
+
+#middle-search-menu .main-menu:hover #middle-search-container{
+display:block;
+    animation:show 0.3s ease-in forwards;
+    /*添加动话效果*/
+}
+@keyframes show {
+    100%{
+        height:300px;
+    }
+}
+/*animation: show 0.3s ease-in forwards;*/
+/*}*/
+/*@keyframes show {*/
+    /*100%{*/
+        /*height: 100px;*/
+    /*}}*/
+
+
+/*right-search*/
+#input-search{
+    margin-top:20px;
+    float:right;
+    /*font-size:100px;*/
+}
+#input-search div{
+    float:right;
+}
+#input-text{
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*right: 51px;*/
+
+    z-index: 1;
+    width: 236px;
+    height: 48px;
+    padding: 0 10px;
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+    line-height: 100px;
+}
+
+#submit{
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*top: 0;*/
+    /*position:relative;*/
+    /*right:46px;*/
+    /*top:-5px;*/
+    display:inline-block;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    font-size: 2px;
+    line-height: 70px;
+    /*background-color:rgba(255,255,255,0.1);*/
+    /*background: #fff;*/
+    /*color: #616161;*/
+    /*background:url("../img/search.png") no-repeat ;*/
+    /*background-size:50px 50px;*/
+    /*用background-size会出现不兼容的问题，只有主流浏览器才支持*/
+    /*最好是用定位做*/
+}
+#input-search div:hover #input-search-coin{
+    color:white;
+}
+#input-search div:hover #submit{
+    background:#ff6700;
+}
+/*只需要在外卖呢多家一个div间接进行调控*/
+/*错误尝试：*/
+/*1：将input写入i标签下，透明显示，出现coin背景颜色不正常，submit用透明度，但是颜色显示很暗*/
+/*#input-search-coin:hover{*/
+/*color:red;*/
+/*background-color:rgba(255,255,255,0.1);*/
+/*!*background:red;*!*/
+/*}*/
+/*#input-search-coin:hover{*/
+    /*color:white;*/
+/*}*/
+/*#input-search-coin:hover #submit{*/
+    /*color*/
+    /*background:#ff6700;*/
+
+#input-search-coin{
+    position:relative;
+    top:0;
+    right:45px;
+    font-size:40px;
+    color: #616161;
+    /*display:inline-block;*/
+    /*width:50px;*/
+    /*height:50px;*/
+    /*background:red;*/
+    /*z-index:1;*/
+}
+
+
+
+
+/*middle-next*/
+/*left-nav-container*/
+#middle-next{
+    width:100%;
+    height:460px;
+
+}
+#right-photo{
+    position:relative;
+    top:-460px;
+    left:0;
+    z-index:1;
+}
+#left-nav{
+    position:relative;
+    height:420px;
+    width:234px;
+    border:0;
+    background:#333;
+    padding:20px 0;
+    background:rgba(0,0,0,0.6);
+    z-index:2;
+}
+.left-nav-main-menu{
+    height:42px;
+    line-height:42px;
+    padding-left:30px;
+    display:block;
+    font-size:14px;
+}
+.left-nav-main-menu>a{
+    display:block;
+    width:100%;
+    height:100%;
+    color:#fff;
+}
+.icon-jiankuohaocudayou{
+    margin-right:15px;
+    float:right;
+}
+.left-nav-main-menu:hover{
+    background:#ff6700;
+}
+#left-nav-container {
+    position:absolute;
+    left:234px;
+    top:0;
+    width:796px;
+    height:460px;
+    background:white;
+    border:1px solid #e0e0e0;
+    display:none;
+}
+#left-nav-container ul{
+    float:left;
+    width:265px;
+    height:100%;
+}
+#left-nav-container ul ul{
+    width:100%;
+    height:76px;
+    /*border:1px;*/
+}
+#left-nav-container ul ul li{
+    /*text-align:center;*/
+    float:left;
+}
+#left-nav-container ul ul li a{
+    color:#333;
+}
+.left-nav-second-menu{
+    padding:15px 30px;
+}
+#left-nav .left-img{
+    display:block;
+    height:40px;
+    width:40px;
+    margin-right:12px;
+
+    background:url("../img/mitu.jpg") center center no-repeat;
+}
+#left-nav-container .left-img-name {
+    /*width:100%;*/
+    /*height:100%;*/
+    /*!*displa*!*/
+    /*margin-right:12px;*/
+}
+#left-nav-container .left-img-name a:hover{
+    color:#ff6700;
+}
+#left-nav-container .left-img-choose{
+    border: 1px solid #ff6700;
+    float:right;
+
+    /*color:#ff6700;*/
+}
+#left-nav-container .left-img-choose a{
+    display:block;
+    padding:0 10px;
+    /*z-index:1;*/
+    color:#ff6700;
+    font-size:12px;
+}
+#left-nav-container .left-img-choose a:hover{
+    background:#ff6700;
+    /*z-index:0;*/
+    color:white;
+}
+/*/left二级菜单显示*!*/
+#left-nav ul>li:hover #left-nav-container{
+    display:block;
+}
+
+
+
+/*function*/
+#function{
+    overflow:hidden;
+    margin-top:14px;
+    width:100%;
+    height:170px;
+}
+#function #little-coin{
+    /*overflow:hidden;*/
+    display:inline-block;
+    margin-right:14px;
+    width:234px;
+    height:170px;
+    float:left;
+    background: #5f5750;
+    /*padding-left:2px;*/
+    /*padding-top:2px;*/
+    /*padding-bottom: 3px;*/
+}
+#function .function-img{
+    display:inline-block;
+    text-align:center;
+    margin:0 auto;
+    margin-right:14px;
+    width:316px;
+    height:170px;
+    float:left;
+}
+#function .function-img img{
+    max-width:100%;
+    max-height:100%;
+    /*让图片正常比例显示*/
+}
+/*little-coin 二级样式*/
+
+#little-coin li{
+    display:block;
+    width:76px;
+    height:82px;
+    float:left;
+    border:1px solid grey;
+    border-bottom:1px solid #5f5750;
+    /*此处不知为何与最外面li有间隙*/
+    /*margin:0 auto;*/
+
+}
+#little-coin a{
+    color:grey;
+    padding:8px 0;
+    text-align:center;
+    display:inline-block;
+    width:70px;
+    height:63px;
+    /*margin:0 auto;*/
+}
+#little-coin a:hover{
+    color:white;
+}
+
+/*#footer 内容*/
+#footer{
+    width:100%;
+    height:272px;
+    background:white;
+}
+
+/*#footer-service内容*/
+#footer-service{
+    /*line-height:80px;*/
+    height:80px;
+    border-bottom:1px solid #e0e0e0;
+    /*padding:26px 0;*/
+    display:inline-block;
+    text-align:center;
+}
+#footer-service ul li{
+    float:left;
+    display:inline-block;
+    width:243px;
+    height:25px;
+    border-right:1px solid #e0e0e0;
+    text-align:center;
+    margin:26px 0;
+
+    /*line-height:25;*/
+}
+#footer-service .footer-clear-border{
+    border-right:1px solid white;
+}
+#footer-service ul li a{
+    text-align:center;
+    font-size:16px;
+    color:#333;
+}
+
+
+/*#footer-link内容*/
+/*小链接内容*/
+#footer-link{
+    height:192px;
+    padding:40px 0;
+}
+#footer-link .main-mu{
+    float:left;
+    width:160px;
+    height:112px;
+}
+#footer-link .text-word{
+    font-size:14px;
+    margin:-1px 0 26px;
+    line-height:1.25;
+    color:#424242;
+}
+#footer-link .foot-link{
+    font-size:12px;
+    color:#757575;
+    margin:10px 0 0;
+}
+/*左边客服内容*/
+#kefu-container{
+    border-left:1px solid #e0e0e0;
+    float:left;
+    width:252px;
+    height:112px;
+    display:inline-block;
+    text-align:center;
+    margin-left:17px;
+}
+#phone-number{
+    font-size:22px;
+    margin:0 0 5px;
+    line-height:1;
+    color:#ff6700;
+}
+#service-hours{
+    font-size:12px;
+    margin:0 0 16px;
+    color:#616161;
+}
+#kefu-number{
+    font-size:14px;
+}
+#kefu-number a{
+    color:#ff6700;
+    padding:4px 4px;
+    border:1px solid #ff6700;
+}
+#kefu-number a:hover{
+    background:#ff6700;
+    color:white;
+}
+
+/*#info内容*/
+#info{
+    height:166px;
+    width:100%;
+    padding:30px 0;
+}
+#mi-logo-next-container{
+    display:inline-block;
+    margin-top:19px;
+    margin-left:20px;
+    float:left;
+}
+
+#mi-logo-next-container .top-nav-again,span{
+    float:left;
+    font-size:12px;
+}
+#mi-logo-next-container .top-nav-again a{
+    color:#757575;
+    padding:0 3px;
+}
+#mi-logo-next-container #info-information{
+    font-size:12px;
+    color:#b0b0b0;
+}
+#info .info-img{
+    margin-top:20px;
+    margin-left:30px;
+    float:left;
+    height:28px;
+    width:85px;
+}
+#info .info-img img{
+    max-height:100%;
+    max-width:100%;
+}
+
